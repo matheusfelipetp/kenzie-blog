@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer type="module" src="../src/js/homePage.js"></script>
+    <script type="module" defer src="../src/js/delete.js"></script>
+    <link rel="stylesheet" href="../src/styles/reset.css">
+    <link rel="stylesheet" href="../src/styles/homePage.css">
+    <title>Blog M2 - Home Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class=" header__div container">
+            <div class="header__user">
+                <img src="../src/img/perfil.png" alt="Imagem de Perfil">
+                <h2>Nickname</h2>
+            </div>
+            <button class="btn-logout">Logout</button>
+        </div>
+    </header>
+
+    <section class="post">
+        <textarea name="post-user" id="post-user" placeholder="No que você está pensando?"></textarea>
+        <button class="btn-post">+</button>
+    </section>
+
+    <main class="main">
+        <ul class="main__list"></ul>
+    </main>
+
+    <div class="page">
+        <button id="previous">&lt;&lt;</button>
+        <p>1</p>
+        <button id="next">&gt;&gt;</button>
+    </div>
+
+    <div class="modal-edit">
+        <form class="modal-edit__form">
+            <h1>Editar</h1>
+            <button class="btn-close">X</button>
+            <textarea name="post-edit" id="post-edit"></textarea>
+            <button class="modal__btn-edit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="modal-delete">
+        <div class="modal-delete-bg">
+            <h2>Deseja deletar este post?</h2>
+            <button class="btn-close-post">X</button>
+            <button class="btn-delete-post">Deletar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

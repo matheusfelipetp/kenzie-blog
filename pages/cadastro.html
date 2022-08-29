@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script defer type="module" src="../src/js/cadastro.js"></script>
+  <link rel="stylesheet" href="../src/styles/reset.css">
+  <link rel="stylesheet" href="../src/styles/index.css">
+  <title>Blog M2 - Cadastro</title>
+</head>
+
+<body>
+  <form class="form">
+    <h1>Cadastro</h1>
+    <input type="text" name="name-ser" id="name-user" placeholder="Nome do usuário">
+    <input type="email" name="email-user" id="email-user" placeholder="usuario@email.com">
+    <input type="text" name="img-user" id="img-user" placeholder="Foto de perfil">
+    <input type="password" name="password-user" id="password-user" placeholder="Senha">
+    <ul>
+      <h4>A SENHA DEVE CONTER:</h4>
+      <li><span>- Uma letra maiúscula</span></li>
+      <li><span>- Um número</span></li>
+      <li><span>- Mínimo 8 caracteres</span></li>
+    </ul>
+    <button class="form__btn">Cadastrar</button>
+  </form>
+  <p class="mesage-login">Já é cadastrado? Faça seu <span>login</span></p>
+
+  <div class="toast">
+    <div class="toast__header">
+      <h2>Deu tudo certo!</h2>
+    </div>
+    <div class="toast__body">
+      <p>Usuário cadastrado com sucesso!</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
